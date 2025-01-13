@@ -10,7 +10,7 @@ public class Main {
         int a = scan.nextInt();
         int b = scan.nextInt();
 
-        result = a + 100;
+        result = a + 100;//
         System.out.print(result + " ");
         result = b % 10;
         System.out.println(result);
