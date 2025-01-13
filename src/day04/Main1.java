@@ -10,7 +10,7 @@ public class Main1 {
         //값바꾸기
         temp = n1;
         n1 = n2;
-        n2 = temp;//@@
+        n2 = temp;//@@@@@@
 
         System.out.println(n1 + " " + n2);
 
