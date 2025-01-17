@@ -1,6 +1,7 @@
 package day08;
 
 import java.io.*;
+import java.util.Objects;
 
 
 public class Main {
@@ -29,7 +30,7 @@ public class Main {
                     break;
 
                 case "2":
-                    for (int i = 0; i < b.length; i++) {
+                    for (int i = 0; i < Objects.requireNonNull(b).length; i++) {
                         bw.write("scores[" + i + "]> ");
                         bw.flush();
                         b[i] = Integer.parseInt(br.readLine());
@@ -38,7 +39,7 @@ public class Main {
                     break;
 
                 case "3":
-                    for (int i = 0; i < b.length; i++) {
+                    for (int i = 0; i < Objects.requireNonNull(b).length; i++) {
                         bw.write("scores[" + i + "]> " + b[i] + "\n");
                         bw.flush();
 
@@ -46,6 +47,7 @@ public class Main {
                     break;
 
                 case "4":
+                    assert b != null;
                     for (int i : b) {
                         sum += i;
                         avgcount++;
