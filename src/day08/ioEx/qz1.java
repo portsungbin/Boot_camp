@@ -21,7 +21,6 @@ public class qz1 {
 
             String input = br.readLine();
 
-
             switch (input) {
                 case "1":
                     bw.write("학생수> ");
