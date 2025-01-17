@@ -1,4 +1,4 @@
-package day08;
+package day08.ioEx;
 
 import java.io.*;
 import java.util.Scanner;
