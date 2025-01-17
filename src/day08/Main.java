@@ -8,7 +8,6 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int a = 0;
         int[] b = null;
         int sum = 0;
         int avgcount = 0;
@@ -25,7 +24,7 @@ public class Main {
                 case "1":
                     bw.write("학생수> ");
                     bw.flush();
-                    a = Integer.parseInt(br.readLine());
+                    int a = Integer.parseInt(br.readLine());
                     b = new int[a];
                     break;
 
