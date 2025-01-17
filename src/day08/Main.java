@@ -14,6 +14,7 @@ public class Main {
         int sum = 0;
         int avgcount = 0;
 
+
         while (true) {
             bw.write("------------------------------------------------\n");
             bw.write("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료\n");
