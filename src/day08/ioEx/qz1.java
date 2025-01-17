@@ -72,6 +72,7 @@ public class qz1 {
                     bw.write("잘못입력되었습니다.\n");
                     bw.flush();
                     break;
+
             }
 
 
