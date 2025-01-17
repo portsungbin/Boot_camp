@@ -33,7 +33,12 @@ public class Ex {
                     break;
 
                 case "2":
-                    for (int i = 0; i < Objects.requireNonNull(b).length; i++) {
+                    if (b == null) {
+                        bw.write("학생 수 먼저 입력하세요.\n");
+                        bw.flush();
+                        break;
+                    }
+                    for (int i = 0; i < b.length; i++) {
                         bw.write("scores[" + i + "]> ");
                         bw.flush();
                         b[i] = Integer.parseInt(br.readLine());
@@ -42,7 +47,12 @@ public class Ex {
                     break;
 
                 case "3":
-                    for (int i = 0; i < Objects.requireNonNull(b).length; i++) {
+                    if (b == null) {
+                        bw.write("점수가 입력되지 않았습니다.\n");
+                        bw.flush();
+                        break;
+                    }
+                    for (int i = 0; i < b.length; i++) {
                         bw.write("scores[" + i + "]> " + b[i] + "\n");
                         bw.flush();
 
@@ -50,7 +60,12 @@ public class Ex {
                     break;
 
                 case "4":
-                    assert b != null;
+                    if (b == null) {
+                        bw.write("점수가 입력되지 않았습니다.\n");
+                        bw.flush();
+                        break;
+                    }
+
                     for (int i : b) {
                         sum += i;
                         avgcount++;
