@@ -20,7 +20,7 @@ public class Main {
             bw.flush();
 
             String input = br.readLine();
-
+            
             switch (input) {
                 case "1":
                     bw.write("학생수> ");
